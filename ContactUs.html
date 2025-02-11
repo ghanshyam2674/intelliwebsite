@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Help Desk</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<style>
+    textarea,
+    input {
+        padding: 0.5rem;
+    }
+</style>
+
+<body class="text-black bg-blue-900">
+    <header class="font-semibold text-blue-900 fixed w-full scroll-smooth focus:scroll-auto focus z-50 ">
+        <navbar class="top_head bg-white border-b-2 border-gray-200 flex p-3 px-10 text-sm justify-between">
+            <div class="flex space-x-8">
+                <div class="">
+                    <i class="fa-regular fa-envelope text-red-500"> </i>
+                    <a href="">info@intellisync.in</a>
+                </div>
+                <div class="space-x-2"><i class="fa-solid fa-location-dot text-red-500"></i>
+                    <a href="">Gurgaon</a>
+                </div>
+            </div>
+            <div class="flex space-x-8">
+                <div>Careers</div>
+                <div>News & Media</div>
+                <div>FAQ</div>
+            </div>
+        </navbar>
+        <nav
+            class=" shadow-xl font-semibold overflow-hidden fixed w-full scroll-smooth focus:scroll-auto focus bg-white text-lg">
+            <div class="p-5 container flex justify-between font-sans items-center">
+                <div class="Company_logo flex items-center space-x-3">
+                    <p class=" text-sm duration-300 hover:scale-110"><img src="./images/logo.png" height="40px"
+                            width="40px" alt=""></p>
+                    <p class="text-black text-2xl">IntelliSYNC</p>
+                </div>
+                <div class="info flex space-x-14 ">
+                    <div class="duration-500 hover:scale-125"><a href="./index.html">Home</a>
+                    </div>
+                    <div class="duration-500 hover:scale-125"><a href="./about.html">About Us</a></div>
+                    <div class="duration-500 hover:scale-125"><a href="./Services.html">Services</a></div>
+                    <div class="duration-500 hover:scale-125"><a href="./ContactUs.html">Contact Us</a></div>
+                </div>
+                <div class="flex space-x-3">
+                    <div class="flex items-center"><button class=""><i
+                                class="fa-solid fa-magnifying-glass"></i></button></div>
+                    <label class="bg-white swap swap-rotate "> <input type="checkbox" />
+                        <svg class="swap-off fill-current " xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 512 512">
+                            <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                        </svg>
+                        <svg class="swap-on fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" width="32"
+                            height="32" viewBox="0 0 512 512">
+                            <polygon
+                                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                        </svg>
+                    </label>
+                    <div class="border-r-2 border-gray-200 "></div>
+                    <div class="Phone_logo p-3 ">
+                        <a class=" text-red-500 " href=""><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                    <div class="px-2">
+                        <a href="./Contact Us.html">
+                            <p class="text-sm  text-gray-500">Have Any Question?</p>
+                        </a>
+                        <div>+91-9318352911</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main_container rounded-full border">
+        <div class="text-center">
+            <div class="h-60 p-40 bg-white">
+                <a href="./ContactUs.html">
+                    <p class="Q font-bold text-4xl p-8 uppercase">Have Any Question?</p>
+                </a>
+            </div>
+        </div>
+        <div class="bg-blue-700 px-20 border-t-4 bg-cover " style="background-image: url(./Pictures/nasa.jpg);">
+            <form class="" method="POST">
+                <div class=" pb-12 pt-10">
+                    <h2 class=" text-2xl font-semibold leading-7 text-white">Personal Information</h2>
+                    <p class=" text-xl text-white">Use a permanent address where you can receive mail.</p>
+                    <div class="pt-10 flex flex-wrap justify-evenly space-y-5">
+                        <div class="w-[500px] pt-4 sm:col-span-3">
+                            <label for="first-name" class="block font-medium text-xl leading-6 text-white">First
+                                Name</label>
+                            <div class="pt-2">
+                                <input type="text" name="firstname" id="first-name" autocomplete="given-name"
+                                    class="block w-full rounded-md  py-1.5 bg-white text-gray-900 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+
+                        <div class="w-[500px] sm:col-span-3">
+                            <label for="last-name" class="block text-xl font-medium leading-6 text-white">Last
+                                Name</label>
+                            <div class="mt-2">
+                                <input type="text" name="lastname" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md  py-1.5 bg-white text-gray-900 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+
+                        <div class="w-[500px] sm:col-span-4 ">
+                            <label for="email" class="block text-xl font-medium leading-6 text-white">Email
+                                Address</label>
+                            <div class="mt-2">
+                                <input id="email" name="email" type="email" id="email" autocomplete="email"
+                                    placeholder=""
+                                    class="block w-full rounded-md  py-1.5 bg-white text-black shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+
+                        <div class="w-[500px] sm:col-span-2 sm:col-start-1">
+                            <label for="city" class="block text-xl font-medium leading-6 text-white">City</label>
+                            <div class="pt-2">
+                                <input type="text" name="city" id="city" autocomplete="address-level2"
+                                    class="block w-full rounded-md  py-1.5 bg-white text-black shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="bg-transparent px-[120px] w-full sm:col-span-full">
+                            <label for="about" class="block text-xl font-medium leading-6 text-white">Type Your
+                                Question</label>
+                            <div class="mt-2">
+                                <textarea id="chatbox" name="User_question" rows="3"
+                                    class="block w-full rounded-md  py-1.5 bg-white text-gray-900 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-6 flex items-center justify-end px-[120px]">
+                        <!-- <button type="button" class=" bg-white p-2 rounded-xl font-semibold leading-6 text-gray-900">Cancel</button> -->
+                        <button name="submit" type="submit"
+                            class="rounded-md bg-green-700 px-3 py-2 font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+                    </div>
+            </form>
+        </div>
+    </main>
+    <footer class=" bg-white text-lg">
+        <div class="Company_logo flex items-center space-x-3 p-5">
+            <p class=" text-sm duration-300 hover:scale-110"><img src="./images/logo.png" height="40px" width="40px"
+                    alt="">
+            </p>
+            <p class="text-black text-2xl font-semibold ">IntelliSYNC</p>
+        </div>
+        <div class="footer flex border-t-4 justify-between px-14 py-8">
+            <div>
+                <div class="text-blue-800 font-bold duration-300 hover:scale-125">Branch</div>
+                <p>Noida</p>
+                <p>Rohini</p>
+                <p>Faridabad</p>
+                <p>Model Town</p>
+            </div>
+            <div>
+                <div class="text-blue-800 font-bold duration-300 hover:scale-125">Services</div>
+                <p>KPI</p>
+                <p>HRMS</p>
+                <p>Web Designing</p>
+                <p>Web Development</p>
+            </div>
+            <div>
+                <div class="text-blue-800 font-bold duration-300 hover:scale-125">Company</div>
+                <p>Jobs</p>
+                <p>Contact</p>
+                <p>About us</p>
+            </div>
+            <div>
+                <div class="text-blue-800 font-bold duration-300 hover:scale-125">Location</div>
+                <p>Address: C-2597, Basement and Stilt Floor, <br> Sushant Lok-1, Sector 43, Gurugram, <br>Haryana
+                    122002</p>
+                <p>Phone : +91-9318352911</p>
+                <p>Email : info@intellisync.in</p>
+            </div>
+        </div>
+        <div class=" flex justify-between px-14 pb-7 text-2xl font-light ">
+            <p>Copyright © 2024 - All right reserved</p>
+            <div class="text-2xl space-x-2 tr">
+                <a href=""><i class="duration-300 hover:scale-150 fa-brands text-blue-600 fa-facebook"></i></a>
+                <a href=""><i class="duration-300 hover:scale-150 fa-brands fa-instagram text-red-500"></i></a>
+                <a href=""><i class="duration-300 hover:scale-150 fa-brands fa-twitter"></i></a>
+                <a href=""><i class="duration-300 hover:scale-150 fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    </script>
+    <script>
+        const scroll = ScrollReveal({
+            reset: true,
+            duration: 2600,
+            distance: '60px'
+        })
+        scroll.reveal('.Q', { delay: 200, origin: 'left' })
+        scroll.reveal('.text-reveal', { delay: 200, origin: 'top' })
+        const scroll1 = ScrollReveal({
+            reset: true,
+            duration: 1500,
+            distance: '150px'
+        })
+        scroll.reveal('.HRKPI', { delay: 150, origin: 'top' })
+        scroll.reveal('.webd', { delay: 150, origin: 'top' })
+        scroll.reveal('.finkpi', { delay: 150, origin: 'left' })
+    </script>
+</body>
+
+</html>
